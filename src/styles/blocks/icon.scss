@@ -1,0 +1,17 @@
+
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.icon--close {
+  color: #FFFFFF;
+  background-image: url(/src/images/Close.png);
+}
+

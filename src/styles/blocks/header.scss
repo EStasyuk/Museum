@@ -1,0 +1,31 @@
+
+.header {
+  background-image: url(/images/Natsionalnij-hudozhnij-muzej-Ukrayini-Kiyiv-Little.png);
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+
+
+  &-menu {
+    display: flex;
+    flex-direction: row;
+    padding-inline: 20px;
+    align-items: center;
+    padding-top: 9px;
+    width: 50%;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    width: 55px;
+    height: 61px;
+    justify-content: center;
+  }
+}
+
+.burger-menu {
+  height: 24px;
+  width: 24px;
+}
+

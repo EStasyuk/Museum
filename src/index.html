@@ -1,19 +1,78 @@
 <!doctype html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Title</title>
+    <title>НАМУ</title>
+    <link rel="icon" type="image/x-icon"
+    href="./images/favicon.ico">
     <link
       rel="stylesheet"
       href="./styles/main.scss"
     />
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script src="scripts/main.js"></script>
+  <body class="page__body">
+    <div class="page-wrapper">
+      <header class="header">
+        <div class="header-menu">
+          <a href="#aside-menu" class="menu__link">
+            <img class="burger-menu" src="images/Menu_Burger.png" alt="menu icon">
+          </a>
+          <a href="#" class="header__logo-link header__logo">
+            <img class="header-logo" src="images/Logo_NA_MU.png" alt="NAMU logo">
+          </a>
+        </div>
+      </header>
+      <aside class="aside-menu page__aside-menu" id="aside-menu">
+        <div class="container">
+          <div class="aside__top-bar-menu">
+            <a href="#" class="icon icon--close"></a>
+            <div class="aside__nav-menu">
+              <nav class="nav menu__nav">
+                <ul class="nav__list nav__list--aside-menu">
+                  <div class="nav__list--column nav__list--column1">
+                    <li class="nav__item">
+                      <a href="#gallery" class="nav__link menu--gallery">Галерея</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#exhibitions" class="nav__link menu--exhibitions">Виставки та події</a>
+                    </li>
+                  </div>
+                  <div class="nav__list--column nav__list--column2">
+                    <li class="nav__item">
+                      <a href="#about_us" class="nav__link menu--about_us">Про Нас</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#contacts" class="nav__link menu--contacts">Контакти</a>
+                    </li>
+                  </div>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="aside-container">
+            <div class="aside-title">Графік роботи</div>
+            <div class="schedule">
+              <span>12:00 — 20:00</span> середа <br>
+              <span>12:00 — 20:00</span> четвер <br>
+              <span>12:00 — 20:00</span> п’ятниця <br>
+              <span>11:00 — 19:00</span> субота <br>
+              <span>11:00 — 19:00</span> неділя
+            </div>
+            <p class="schedule">
+              <span>Вихідні:</span> понеділок, вівторок <br>
+              Каса припиняє роботу за 1 годину
+              до закриття музею
+            </p>
+          </div>
+        </div>
+      </aside>
+      <h1 class="page--title">ХУДОЖНІЙ МУЗЕЙ</h1>
+      <script src="scripts/main.js"></script>
+    </div>
   </body>
 </html>
