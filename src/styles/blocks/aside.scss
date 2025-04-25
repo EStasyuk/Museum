@@ -1,4 +1,6 @@
 
+@import './../utils/_mixins.scss';
+
 .aside-menu {
   background-color: #1A5A4C;
   position: fixed;
@@ -23,20 +25,65 @@
   padding: 27px 20px;
   display: flex;
   flex-direction: column;
+  gap: 49px;
+
+  @include onTablet {
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 40px 35px;
+    gap: 77px;
+    justify-content: space-between;
+
+  }
 }
-
-
 
 .aside__nav-menu {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 2;
 }
 
 .aside-container {
   display: flex;
   flex-direction: column;
-  padding-top: 148px;
+  position: relative;
+
+  &::before {
+  content: '';
+  position: absolute;
+  top: -24px;
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #FFFFFF;
+  }
+
+  @include onTablet {
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -38px;
+      top: 5px;
+      display: block;
+      height: 100%;
+      width: 1px;
+      background-color: #FFFFFF;
+    }
+}
+
+.aside__schedule {
+  @include onTablet{
+  display: flex;
+  flex-direction: row;
+  gap: 38px;
+}
+}
+
+.aside__text {
+  @include onTablet {
+  width: 144px;
+  }
 }
 
 .aside-title {
@@ -45,7 +92,8 @@
     font-size: 14px;
     line-height: 141%;
     letter-spacing: 0%;
-    color: #FFFFFF;;
+    color: #FFFFFF;
+    padding-bottom: 24px;
 }
 
 .schedule {
@@ -54,7 +102,12 @@
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 0%;
-  color: #FFFFFF;;
+  color: #FFFFFF;
+
+}
+
+.hours {
+  padding-bottom: 16px;
 }
 
 span {
@@ -67,5 +120,14 @@ span {
 }
 
 .aside__top-bar-menu {
-  height: 73px;
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+
+
+  @include onTablet {
+    gap: 38px;
+
+}
+}
 }
