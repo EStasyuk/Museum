@@ -5,6 +5,12 @@
   }
 }
 
+@mixin onMobile {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+
 @mixin onTablet {
   @media (min-width: 640px) {
     @content;
@@ -23,5 +29,24 @@
   }
 }
 
+@mixin page-grid {
+  --columns: 2;
 
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  @include onMobile {
+      --columns: 4;
+    }
+
+  @include onTablet {
+    --columns: 6;
+
+    column-gap: 30px;
+  }
+
+  @include onDesktop {
+    --columns: 12;
+  }
+}
 

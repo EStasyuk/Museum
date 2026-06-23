@@ -10,14 +10,29 @@ a {
 }
 
 h1 {
+  margin: 0;
   font-family: Montserrat;
   font-weight: 700;
   font-size: 45px;
   line-height: 100%;
   letter-spacing: 0%;
-  text-align: center;
   color: #000000;
-}
+
+  @include onMobile {
+      font-size: 48px;
+      line-height: 100%;
+      text-align: center;
+    }
+  
+    @include onTablet {
+      font-size: 54px;
+      text-align: left;
+    }
+  
+    @include onDesktop {
+      font-size: 72px;
+    }
+  }
 
 p {
   margin: 0;

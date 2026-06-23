@@ -4,6 +4,7 @@
   height: 24px;
   width: 24px;
   background-size: cover;
+  transition: transform 0.5s;
 
   &:hover {
     transform: scale(1.2);

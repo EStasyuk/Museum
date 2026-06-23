@@ -32,6 +32,49 @@
     list-style: none;
     cursor: pointer;
 
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: #FFFFFF;
+
+      transition: transform 0.3s;
+      //transform: scale(0);
+    }
+
+    &:hover::after {
+      transform: scale(1);
+      width: 100%;
+    }
+    }
+  }
+}
+
+.nav__item {
+  color: #FFFFFF;
+    text-decoration: none;
+    font-family: IBM Plex Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    list-style: none;
+    //cursor: pointer;
+
+}
+
+li {
+  list-style: none;
+  transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -48,22 +91,5 @@
     &:hover::after {
       transform: scale(1);
     }
-    }
-  }
-}
 
-.nav__item {
-  color: #FFFFFF;
-    text-decoration: none;
-    font-family: IBM Plex Sans;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    list-style: none;
-    cursor: pointer;
-}
-
-li {
-  list-style: none;
 }
