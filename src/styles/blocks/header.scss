@@ -7,6 +7,8 @@
   //background-size: cover;
   // box-sizing: border-box;
   //height: 100vh;
+  margin-bottom: 70px;
+  
 
   @include onTablet {
     //background-image: url(/images/Natsionalnij-hudozhnij-muzej-Ukrayini-Kiyiv-Middle.png);
@@ -16,12 +18,14 @@
     display: grid;
     //grid-template-columns: repeat(6, 90px);
     //column-gap: 30px;
+    margin-bottom: 88px;
 
   }
 
   @include onDesktop {
     //background-image: url(/images/Natsionalnij-hudozhnij-muzej-Ukrayini-Kiyiv-Big.png);
     //grid-template-columns: repeat(12, 70px);
+    margin-bottom: 200px;
 
   }
 

@@ -37,3 +37,40 @@ h1 {
 p {
   margin: 0;
 }
+
+h2 {
+  font-family: Montserrat;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    //letter-spacing: 0%;
+    text-align: center;
+
+
+    @include onTablet {
+      font-size: 48px;
+      text-align: left;
+
+      br {
+          display: none;
+        }
+    }
+}
+
+h3 {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #0F0E08;
+}
+
+h4 {
+  font-family: IBM Plex Sans;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  //color: #687480;
+}
