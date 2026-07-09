@@ -1,0 +1,78 @@
+.lection_data {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+
+}
+
+.lection {
+  padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+.lec_data {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.lection_block {
+  position: relative;
+  margin-bottom: 200px;
+
+  @include onTablet {
+    padding-inline: 34px;
+  }
+
+    @include onDesktop {
+      padding-inline: 0;
+    }
+}
+
+.picutre_block {
+  position: absolute;
+
+  left: 20px;
+  right: 20px;
+  bottom: -100px;
+
+  height: 140px;
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  box-sizing: border-box;
+
+  @include onTablet {
+    left: 65px;
+    right: 65px;
+    height: 204px;
+    bottom: -120px;
+  }
+
+  @include onDesktop {
+    left: 355px;
+    right: 355px;
+  }
+}
+
+.picutre_block::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 2px;
+  box-shadow: 0px 2px 0px 0px #1A5A4C40;
+}
+
+.lec_title {
+  text-align: center;
+  margin-bottom: 20px;
+}

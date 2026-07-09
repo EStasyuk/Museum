@@ -7,24 +7,33 @@
 @import './blocks/page.scss';
 @import './blocks/icon.scss';
 @import './utils/_mixins.scss';
+@import './blocks/events.scss';
+@import './blocks/lection.scss';
+@import './blocks/gallery.scss';
+@import './blocks/pidpuska.scss';
+@import './blocks/footer.scss';
 
-body {
+
+body, .page__body {
   //background: $c-gray;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
-  @media (min-width: 640px) {
+ /* @media (min-width: 640px) {
     header {
+      display: grid;
+      --columns: 6;
+      grid-template-columns: repeat(var(--columns),1fr);
+      column-gap: 30px;
+    } 
 
-        display: grid;
-        --columns: 6;
-        grid-template-columns: repeat((--columns),1fr);
-        column-gap: 30px;
-
-    }
-
-  }
+  }*/
 
   h1 {
     margin: 0;

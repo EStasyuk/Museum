@@ -1,5 +1,14 @@
 .actual_events {
   padding: 0 20px;
+
+  @include onTablet {
+    padding: 0 34px;
+  }
+
+  @include onDesktop {
+    padding: 0;
+  }
+
   }
 
 .events_title {
@@ -10,24 +19,39 @@
   @include onTablet {
     text-align: left;
   }
+
+    @include onDesktop {
+      padding-left:55px;
+    }
 }
 
-.actual-events-block,
-.events-block {
-  margin-bottom: 60px;
-}
+.actual-events-block {
+  display: flex;
+  //margin-bottom: 60px;
+  flex-direction: column;
 
-@include onDesktop {
-  .events-block {
-      display: flex;
+  @include onDesktop {
+    display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 30px;
+    
+      padding: 0 55px;
       align-items: center;
       margin-bottom: 104px;
-    }
+  }
+}
+
+.actual-events-block picture {
+  @include onDesktop {
+    grid-column: 1 / 8;
+  }
 }
 
 
 .events {
   display: block;
+  width: 100%;
+  height: auto;
   margin-bottom: 20px;
 
   @include onTablet {
@@ -43,18 +67,25 @@
 .exhibition-block {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @include onTablet {
+    justify-content: flex-start;
+    gap: 15px;
+  }
 }
 
 .exhibition {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #687480;
 
   @include onTablet {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 
     @include onDesktop {
-      margin-bottom: 15px;
+      margin-bottom: 30px;
     }
 }
 
@@ -68,6 +99,7 @@
   margin-bottom: 15px;
 
   @include onTablet {
+    font-size: 14px;
     margin-bottom: 32px;
   }
 
@@ -94,7 +126,7 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0%;
-  margin-bottom: 15px;
+
   color: #4E4E4E;
   margin-bottom: 60px;
 
@@ -103,11 +135,31 @@
   }
 
     @include onDesktop {
-      margin-bottom: 104px;
+      margin-bottom: 0;
+    }
+}
+
+.info_block {
+  @include onDesktop {
+    grid-column: 9 / 13;
+    align-self: center;
+    margin-right: 0;
+  }
+}
+
+.actual-events-block:last-child .info_text {
+  @include onTablet {
+    margin-bottom: 112px;
+  }
+
+    @include onDesktop {
+      margin-bottom: 0;
     }
 }
 
 .orange_square {
   width: 15px;
   height: 15px;
+  align-items: center;
+  gap: 8px;
 }

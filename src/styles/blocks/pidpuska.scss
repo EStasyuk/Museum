@@ -1,0 +1,145 @@
+.pidpuska_block {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+
+  @include onTablet {
+    margin-bottom: 51px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 47px;
+  }
+}
+
+.inner_block {
+  position: absolute;
+  inset: 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  padding-inline: 20px;
+
+  align-content: center;
+
+  @include onTablet {
+    grid-template-columns: repeat(6, 1fr);
+      column-gap: 30px;
+      padding-inline: 34px;
+  }
+    
+  @include onDesktop {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+    padding-inline: 55px;
+  }
+}
+
+.pidpuska_picture {
+  display: block;
+  width: 100%;
+  //position: absolute;
+}
+
+.pidpuska_picture img {
+  display: block;
+  width: 100%;
+  //height: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pidpuska_title {
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  margin-top: 0;
+
+  @include onTablet {
+    margin-bottom: 16px;
+  }
+}
+
+.pidpuska_text {
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+
+  @include onTablet {
+    margin-bottom: 64px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 72px;
+  }
+}
+
+.subscribe-form {
+  display: flex;
+
+  @include onTablet {
+    gap: 16px;
+  }
+
+  @include onDesktop {
+    gap: 30px;
+  }
+}
+
+.subscribe-form__input {
+  flex: 1;
+  height: 50px;
+  border: none;
+  padding-inline: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @include onTablet {
+    grid-column: 1 / 4;
+    height: 70px !important;
+  }
+}
+
+.subscribe-form__button {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+
+  background-color: #F14A27;
+  border: none;
+  cursor: pointer;
+
+  //display: flex;
+  //justify-content: center;
+    //align-items: center
+
+  @include onTablet {
+    grid-column: 4;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.pidpuska_title,
+.pidpuska_text,
+.subscribe-form {
+  grid-column: 1 / -1;
+
+  @include onTablet {
+    grid-column: 2 / 6;
+  }
+
+  @include onDesktop {
+    grid-column: 4 / 10;
+  }
+}
+
+.pidpuska_title,
+.pidpuska_text {
+  text-align: center;
+}
