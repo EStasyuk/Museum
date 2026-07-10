@@ -1,11 +1,11 @@
 .footer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
-
   padding-inline: 20px;
 
   margin-bottom: 128px;
+  grid-template-columns: repeat(2, 1fr);
+
 
   @include onTablet {
     grid-template-columns: repeat(6, 1fr);
@@ -183,7 +183,7 @@
   color: #0F0E08;
 }
 
-.hours {
+.footer-hours {
   font-family: IBM Plex Sans;
   font-size: 14px;
   line-height: 150%;
@@ -292,6 +292,11 @@
 
 .footer .nav__link {
   color: #0F0E08;
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .design,
