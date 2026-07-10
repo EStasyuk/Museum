@@ -360,10 +360,58 @@
   }
 }
 
-.mobile-break {
-  display: block;
+br.mobile-break {
+  display: initial;
 
   @include onTablet {
     display: none;
   }
+}
+
+br.tablet-break {
+  display: none;
+
+  @include onTablet {
+    display: initial;
+  }
+
+  @include onDesktop {
+    display: none;
+  }
+}
+
+br.desktop-break {
+  display: none;
+
+  @include onDesktop {
+    display: initial;
+  }
+}
+
+br.mobile-desktop-break {
+  display: initial;
+  
+    @include onTablet {
+      display: none;
+    }
+  
+    @include onDesktop {
+      display: initial;
+    }
+}
+
+br.tablet-desktop-break {
+  display: none;
+
+  @include onTablet {
+    display: initial;
+  }
+
+  @include onDesktop {
+    display: initial;
+  }
+}
+
+br.mobile-tablet-desktop-break {
+  display: initial;
 }
