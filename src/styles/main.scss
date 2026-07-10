@@ -25,6 +25,12 @@ html {
   scroll-behavior: smooth;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
  /* @media (min-width: 640px) {
     header {
       display: grid;

@@ -7,7 +7,8 @@
     flex-direction: column;
   
     @media (min-width: 767px) { 
-      padding: 40px 35px;
+      padding-inline: 35px;
+      padding-top: 39px;
       flex-direction: row;
       align-items: flex-start;
       justify-content: flex-start;
@@ -15,11 +16,18 @@
     }
   
     @include onDesktop {
+      padding-inline: 55px;
+      padding-top: 39px;
       flex-direction: row;
       align-items: flex-start;
       justify-content: flex-start;
       position: relative;
     }
+
+  @include onTheDesign {
+    padding-inline: 80px;
+    padding-top: 39px;
+  }
 
 }
 

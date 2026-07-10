@@ -15,3 +15,9 @@ const swiper = new Swiper('.gallerySwiper', {
     },
   },
 });
+
+const form = document.querySelector('.subscribe-form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+});

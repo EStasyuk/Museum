@@ -53,6 +53,7 @@
   width: 100%;
   height: auto;
   margin-bottom: 20px;
+  transition: transform 0.3s;
 
   @include onTablet {
     margin-bottom: 40px;
@@ -61,6 +62,10 @@
     @include onDesktop{
       margin-right: 130px;
       margin-bottom: 0;
+    }
+
+    &:hover {
+      transform: scale(1.03);
     }
 }
 

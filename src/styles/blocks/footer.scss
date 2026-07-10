@@ -143,6 +143,11 @@
     color: #0F0E08;
 }
 
+.contacts_block a {
+  all: unset;
+  cursor: pointer;
+}
+
 
 .footer__top {
   grid-column: 2;
@@ -352,5 +357,13 @@
   @include onTablet {
     margin: 0;
     align-self: center;
+  }
+}
+
+.mobile-break {
+  display: block;
+
+  @include onTablet {
+    display: none;
   }
 }
