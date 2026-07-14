@@ -99,6 +99,11 @@
   padding-top: 0;
   padding-bottom: 0;
 
+  &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
   @include onTablet {
     grid-column: 1 / 4;
     height: 70px !important;

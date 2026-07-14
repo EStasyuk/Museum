@@ -76,3 +76,19 @@
   text-align: center;
   margin-bottom: 20px;
 }
+
+.events2 {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+
+  @include onTablet {
+    margin-bottom: 40px;
+  }
+
+  @include onDesktop {
+    margin-right: 130px;
+    margin-bottom: 0;
+  }
+}
